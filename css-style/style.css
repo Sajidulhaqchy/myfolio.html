@@ -1,0 +1,285 @@
+/* *common css Start */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center{
+align-items: center;
+}
+
+.button{
+    padding: 19px 43px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #cfc91d;
+    color: #000;
+    border: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.heading{
+    text-align: center;
+}
+.heading h2 {
+    color: #02918c;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 46px;
+}
+.heading p{
+    color: #000;
+    font-size: 16px;
+    font-weight:400;
+    color:#878a8f;
+}
+.text-content{
+    text-align: center;
+}
+
+
+/* *common css ends */
+
+
+/* NAVIGATION STARTS */
+nav{
+    background-color: #02918c;
+}
+nav .container .row .logo{
+    width: 30%;
+}
+
+nav .container .row .menu{
+    width: 70%;
+    text-align: right;
+    display: inline-block;
+}
+nav .container .row .menu ul li {
+    display: inline-block;
+}
+nav .container .row .menu ul li a{
+    color: white;
+    padding: 25px 26px;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+}
+
+/* NAVIGATION END */
+
+
+/* BANNER SECTION START */
+#banner{
+    background-image: url(../images/banner.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner .container .banner_content {
+    color: white;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+#banner .container .row{
+    height: 728px;
+}
+
+#banner .container .banner_content h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#banner .container .banner_content h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px ;
+}
+
+#banner .container .banner_content p{
+    font-size: 18px;
+}
+
+#banner .container .banner_content img{
+    padding: 50px 0;
+}
+
+/* #banner .container .banner_content a{
+    padding: 19px 43px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #cfc91d;
+    color: #000;
+    border: none;
+    display: inline-block
+    
+} */
+
+/* BANNER SECTION ENDS */
+
+
+/* about me starts */
+#about{
+padding: 100px 0;
+}
+
+#about .about-cards{
+    padding: 80px 0;
+}
+
+#about .about-cards .card{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #02918c;
+}
+
+#about .about-cards .card:last-child{
+    border-right: none;
+}
+#about .about-cards .card i {
+    color: #02918c;
+    font-size: 30px;
+}
+
+#about .about-cards .card h3{
+    font-size: 16px;
+    font-weight: 800;
+    padding: 28px;
+}
+#about .about-cards .card p{
+    font-size: 11px;
+}
+
+/* about me ENDS */
+
+
+/*      SERVICE SECTION    */
+#service{
+    background-image: url(../images/servicecard.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 728px;
+
+}
+#service .heading{
+    padding-top: 70px;
+}
+#service .heading,.service-cards{
+    width: 50%;
+}
+#service .text-content {
+    width: 50%;
+    text-align: left;
+}
+#service .heading h2{
+    text-align: left;
+}
+#service .heading p{
+    text-align: left;
+}
+#service .service-cards{
+    padding-top: 57px;
+}
+
+#service .service-cards .sub-card{
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+#service .service-cards .sub-card h3{
+    font-size: 16px;
+    font-weight: 800;
+}
+#service .service-cards .sub-card p{
+    font-size: 11px;
+}
+
+
+/*      SERVICE SECTION    */
+
+/* WORK SECTION */
+
+
+#work {
+    padding-top: 110px;
+}
+
+
+
+#work .workCard{
+display: flex;
+flex-wrap: wrap;
+padding-top: 80px;
+}
+
+#work .workCard .subCard{
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+}
+#work .workCard .subCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#work .overlay{
+    padding: 25px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#work .overlay .ovr_cnt{
+    background-color: #02918c;
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+#work .subCard:hover .ovr_cnt{
+    visibility: visible;
+    opacity: 1;
+}
